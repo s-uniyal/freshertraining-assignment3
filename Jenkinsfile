@@ -8,7 +8,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "mvn -version"
-                sh "mvn clean verify sonar:sonar"
+                sh "mvn clean install sonar:sonar"
             }
 
 
